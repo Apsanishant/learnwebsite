@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notification .banner{
+    display: flex;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 40px;
+    display: flex;
+    transition: 1s;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    position: absolute;
+    top: -80px;
+    justify-content: space-between;
+}
+.notification .banner .fa{
+width: 30px;
+height: 30px;
+background: rgba(236, 234, 234, 0.76);
+margin: 0 10px;
+padding: 10px;
+border-radius: 50%;
+display: flex;
+transition: 1s;
+align-items: center;
+justify-content: center;
+color: #999;
+}
+.notification .banner.show{
+    top: 0;
+}
+.notification .banner #txt{
+    font-size: 30px !important;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    pointer-events: none;
+    transition: 1s;
+}
+.notification .fa-times{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.notification .fa-exclamation{
+    font-size: 20px;
+    color: red !important;
+}
